@@ -1,0 +1,29 @@
+{
+  "bankaccounts": [
+    {
+      "accountNumber": "123456789",
+      "balance": 1000.00,
+      "isActive": true
+    },
+    {
+      "accountNumber": "987654321",
+      "balance": 500.50,
+      "isActive": true
+    },
+    {
+      "accountNumber": "111222333",
+      "balance": 10.00,
+      "isActive": false
+    },
+    {
+      "accountNumber": "444555666",
+      "balance": 2500.75,
+      "isActive": true
+    },
+    {
+      "accountNumber": "777888999",
+      "balance": 150.00,
+      "isActive": true
+    }
+  ]
+}

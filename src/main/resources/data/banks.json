@@ -1,0 +1,40 @@
+{
+  "banks": [
+    {
+      "bic": "BCPOMAMC",
+      "name": "Banque Centrale Populaire"
+    },
+    {
+      "bic": "BMCEMAMC",
+      "name": "Banque Marocaine du Commerce Extérieur"
+    },
+    {
+      "bic": "ATTIJARI",
+      "name": "Attijariwafa Bank"
+    },
+    {
+      "bic": "SGBMMAMC",
+      "name": "Société Générale Marocaine de Banques"
+    },
+    {
+      "bic": "CIHMMAMC",
+      "name": "Crédit Immobilier et Hôtelier"
+    },
+    {
+      "bic": "BMCI",
+      "name": "Banque Marocaine pour le Commerce et l'Industrie"
+    },
+    {
+      "bic": "WAFABANK",
+      "name": "Wafabank"
+    },
+    {
+      "bic": "CMAOMAMC",
+      "name": "Crédit Agricole du Maroc"
+    },
+    {
+      "bic": "BAMRMAA",
+      "name": "Banque Al-Maghrib"
+    }
+  ]
+}

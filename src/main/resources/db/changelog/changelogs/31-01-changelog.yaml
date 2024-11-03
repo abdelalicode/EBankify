@@ -1,0 +1,51 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1730386050941-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_bank
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: bic
+                  type: VARCHAR(255)
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+            tableName: bank
+  - changeSet:
+      id: 1730386050941-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_bankaccount
+                  name: id
+                  type: BIGINT
+              - column:
+                  name: account_number
+                  type: VARCHAR(255)
+              - column:
+                  name: balance
+                  type: DOUBLE
+              - column:
+                  constraints:
+                    nullable: false
+                  name: is_active
+                  type: BOOLEAN
+            tableName: bank_account
+
