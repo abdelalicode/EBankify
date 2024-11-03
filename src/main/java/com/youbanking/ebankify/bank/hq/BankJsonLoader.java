@@ -1,6 +1,9 @@
 package com.youbanking.ebankify.bank.HQ;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.youbanking.ebankify.permission.Permission;
+import com.youbanking.ebankify.permission.PermissionRepository;
+import com.youbanking.ebankify.permission.PermissionType;
 import com.youbanking.ebankify.role.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.youbanking.ebankify.role;
+package com.youbanking.ebankify.permission;
 
 public enum PermissionType {
         MANAGE_USERS, FULL_ACCESS,

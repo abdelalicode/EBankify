@@ -1,4 +1,4 @@
-package com.youbanking.ebankify.role;
+package com.youbanking.ebankify.permission;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

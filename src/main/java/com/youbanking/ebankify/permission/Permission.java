@@ -1,4 +1,4 @@
-package com.youbanking.ebankify.role;
+package com.youbanking.ebankify.permission;
 
 import jakarta.persistence.*;
 import lombok.*;

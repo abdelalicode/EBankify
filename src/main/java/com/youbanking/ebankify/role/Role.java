@@ -1,7 +1,6 @@
 package com.youbanking.ebankify.role;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.youbanking.ebankify.permission.Permission;
 import com.youbanking.ebankify.user.User;
 import jakarta.persistence.*;
 import lombok.*;
