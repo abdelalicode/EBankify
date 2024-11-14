@@ -4,6 +4,7 @@ import com.youbanking.ebankify.bank.bankAccount.BankAccount;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -19,6 +20,7 @@ public class Bank {
         private Long id;
         private String BIC;
         private String name;
+        private BigDecimal basicLimit;
 
         @OneToMany(mappedBy = "bank")
         private List<BankAccount> bankaccounts;

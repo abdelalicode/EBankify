@@ -1,0 +1,41 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1731322663444-4
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: basic_limit
+                  type: DECIMAL
+            tableName: bank
+  - changeSet:
+      id: 1731322663444-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - modifyDataType:
+            columnName: amount
+            newDataType: DECIMAL
+            tableName: transaction
+  - changeSet:
+      id: 1731322663444-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - dropColumn:
+            columnName: balance
+            tableName: bank_account
+  - changeSet:
+      id: 1731322663444-3
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: balance
+                  type: DECIMAL
+            tableName: bank_account
+

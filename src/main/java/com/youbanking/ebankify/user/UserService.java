@@ -1,6 +1,7 @@
 package com.youbanking.ebankify.user;
 
 import com.youbanking.ebankify.bank.HQ.BankController;
+import com.youbanking.ebankify.exception.NotFoundException;
 import com.youbanking.ebankify.role.Role;
 import com.youbanking.ebankify.role.RoleRepository;
 import com.youbanking.ebankify.role.RoleType;
@@ -10,6 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -50,6 +52,26 @@ public class UserService {
             return user;
         }
         return Optional.empty();
+    }
+
+    public User updateUser(User user, Long userId) {
+
+        Optional<User> existingUser = userRepository.findById(userId);
+
+        if(existingUser.isEmpty()) {
+            throw new NotFoundException("User not found.");
+        }
+
+        existingUser.get().setFirstName(user.getFirstName());
+        existingUser.get().setLastName(user.getLastName());
+        existingUser.get().setEmail(user.getEmail());
+        existingUser.get().setAge(user.getAge());
+        return userRepository.save(existingUser.get());
+
+    }
+
+    public Optional<List<User>> findAllUsers() {
+        return Optional.of(userRepository.findAll());
     }
 
 

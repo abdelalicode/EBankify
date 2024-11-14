@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1731007427901-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: expected_time
+                  type: DATETIME
+            tableName: transaction
+  - changeSet:
+      id: 1731007427901-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - modifyDataType:
+            columnName: amount
+            newDataType: DECIMAL
+            tableName: transaction
+

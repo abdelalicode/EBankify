@@ -16,5 +16,5 @@ public class UserReturnDTO {
     private String lastName;
     private Integer age;
     private String roleName;
-    private List<BankAccount> bankAccountList;
+    private List<String> bankAccountTypes;
 }

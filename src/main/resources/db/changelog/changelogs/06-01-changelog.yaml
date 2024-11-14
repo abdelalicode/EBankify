@@ -1,0 +1,84 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1730919202736-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_transaction
+                  name: id
+                  type: UUID
+              - column:
+                  constraints:
+                    nullable: false
+                  name: sender_account_id
+                  type: BIGINT
+              - column:
+                  name: receiver_account_id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: amount
+                  type: DOUBLE
+              - column:
+                  name: transaction_type
+                  type: VARCHAR(255)
+              - column:
+                  name: transaction_status
+                  type: VARCHAR(255)
+              - column:
+                  name: transaction_date
+                  type: DATETIME
+              - column:
+                  name: transaction_fee
+                  type: DOUBLE
+              - column:
+                  name: recurrence_days
+                  type: INT
+              - column:
+                  name: recurrence_end_date
+                  type: DATETIME
+              - column:
+                  name: approved_by_employee_id
+                  type: BIGINT
+            tableName: transaction
+  - changeSet:
+      id: 1730919202736-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: approved_by_employee_id
+            baseTableName: transaction
+            constraintName: FK_TRANSACTION_ON_APPROVED_BY_EMPLOYEE
+            referencedColumnNames: id
+            referencedTableName: users
+  - changeSet:
+      id: 1730919202736-3
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: receiver_account_id
+            baseTableName: transaction
+            constraintName: FK_TRANSACTION_ON_RECEIVER_ACCOUNT
+            referencedColumnNames: id
+            referencedTableName: bank_account
+  - changeSet:
+      id: 1730919202736-4
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: sender_account_id
+            baseTableName: transaction
+            constraintName: FK_TRANSACTION_ON_SENDER_ACCOUNT
+            referencedColumnNames: id
+            referencedTableName: bank_account
+

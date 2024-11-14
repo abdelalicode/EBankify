@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1730752795653-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: bank_account_type
+                  type: VARCHAR(255)
+            tableName: bank_account
+  - changeSet:
+      id: 1730752795653-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addNotNullConstraint:
+            columnDataType: VARCHAR(255)
+            columnName: account_number
+            tableName: bank_account
+            validate: true
+

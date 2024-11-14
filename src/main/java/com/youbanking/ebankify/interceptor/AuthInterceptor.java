@@ -5,8 +5,11 @@ import com.youbanking.ebankify.utils.TokenUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
+
+import java.io.IOException;
 
 @Component
 public class AuthInterceptor implements HandlerInterceptor {
@@ -18,22 +21,33 @@ public class AuthInterceptor implements HandlerInterceptor {
     }
 
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String tokenHeader = request.getHeader("authorization");
+        String tokenHeader = request.getHeader("Authorization");
 
         if(tokenHeader == null || !tokenHeader.startsWith("Bearer ")) {
-            ResponseHandler.errorBuilder("Authentication required", HttpStatus.UNAUTHORIZED, "401" );
+        sendErrorResponse(response, "Authentication required", HttpStatus.UNAUTHORIZED);
             return false;
         }
 
         String token = tokenHeader.replace("Bearer ", "");
 
         if(!tokenUtil.isAuthenticated(token)) {
-            ResponseHandler.errorBuilder("Invalid Token", HttpStatus.UNAUTHORIZED, "401" );
+            sendErrorResponse(response, "Authentication required", HttpStatus.UNAUTHORIZED);
             return false;
         }
 
+        Long userId = tokenUtil.getUserFromToken(token);
+        request.setAttribute("userId", userId);
+        request.setAttribute("token", token);
+
         return true;
 
+    }
+
+    private void sendErrorResponse(HttpServletResponse response, String message, HttpStatus status) throws IOException, IOException {
+        response.setStatus(status.value());
+        response.setContentType("application/json");
+        response.getWriter().write(message);
+        response.getWriter().flush();
     }
 
 

@@ -18,9 +18,24 @@ public class EntityDtoMapper {
     public EntityDtoMapper(ModelMapper modelMapper) {
         this.modelMapper = modelMapper;
 
-        modelMapper.typeMap(User.class, UserReturnDTO.class).addMappings(mapper ->
-                mapper.map(src -> src.getRole().getName(), UserReturnDTO::setRoleName)
+        modelMapper.typeMap(User.class, UserReturnDTO.class).addMappings(mapper -> {
+                mapper.map(src -> src.getRole().getName(), UserReturnDTO::setRoleName);
+
+            mapper.map(
+                    src -> {
+                        if (src.getBankAccounts() != null) {
+                            return src.getBankAccounts().stream()
+                                    .map(bankAccount -> bankAccount.getBankAccountType().name())
+                                    .collect(Collectors.toList());
+                        }
+                        return List.of();
+                    },
+                    UserReturnDTO::setBankAccountTypes
+            );
+                }
         );
+
+
     }
 
     public <D, T> D mapToDto(T entity, Class<D> dtoClass) {

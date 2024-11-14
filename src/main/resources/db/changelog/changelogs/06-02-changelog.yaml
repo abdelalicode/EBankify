@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1730924843653-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - dropColumn:
+            columnName: amount
+            tableName: transaction
+  - changeSet:
+      id: 1730924843653-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    validateNullable: true
+                  name: amount
+                  type: DECIMAL
+            tableName: transaction
+  - changeSet:
+      id: 1730924843653-3
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addNotNullConstraint:
+            columnDataType: DATETIME
+            columnName: transaction_date
+            tableName: transaction
+            validate: true
+

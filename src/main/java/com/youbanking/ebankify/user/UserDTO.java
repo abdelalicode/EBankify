@@ -16,10 +16,8 @@ public class UserDTO {
     private Integer age;
 
     @Email
-    @NotEmpty
     private String email;
 
-    @NotEmpty
     private String password;
 
     private String phone;

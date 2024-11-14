@@ -5,6 +5,8 @@ import com.youbanking.ebankify.user.User;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -21,7 +23,10 @@ public class BankAccount {
         @Column(unique = true, nullable = false)
         private String accountNumber;
 
-        private Double balance;
+        @Enumerated(EnumType.STRING)
+        private BankAccountTypes bankAccountType;
+
+        private BigDecimal balance;
 
         private boolean isActive;
 
@@ -35,12 +40,8 @@ public class BankAccount {
 
         @Override
         public String toString() {
-                return "BankAccount{" +
-                        "id=" + id +
-                        ", accountNumber='" + accountNumber + '\'' +
-                        ", balance=" + balance +
-                        ", isActive=" + isActive +
-                        '}';
+                return " AccountType='" + bankAccountType  +
+                        ", Active=" + isActive ;
         }
 
 }
