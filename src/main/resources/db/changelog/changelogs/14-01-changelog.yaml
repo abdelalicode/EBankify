@@ -1,0 +1,129 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1731597099133-4
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_asset
+                  name: id
+                  type: INT
+              - column:
+                  name: owner_id
+                  type: BIGINT
+              - column:
+                  name: asset_type
+                  type: VARCHAR(255)
+              - column:
+                  name: estimated_value
+                  type: DECIMAL
+              - column:
+                  name: acquisition_date
+                  type: DATETIME
+            tableName: asset
+  - changeSet:
+      id: 1731597099133-5
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_loanapp
+                  name: id
+                  type: INT
+              - column:
+                  name: amount
+                  type: DECIMAL
+              - column:
+                  name: loan_type
+                  type: VARCHAR(255)
+              - column:
+                  name: client_id
+                  type: BIGINT
+              - column:
+                  constraints:
+                    nullable: false
+                  name: approved
+                  type: BOOLEAN
+              - column:
+                  name: approver_id
+                  type: BIGINT
+              - column:
+                  name: created_at
+                  type: DATETIME
+              - column:
+                  name: approved_at
+                  type: DATETIME
+            tableName: loan_app
+  - changeSet:
+      id: 1731597099133-6
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: owner_id
+            baseTableName: asset
+            constraintName: FK_ASSET_ON_OWNER
+            referencedColumnNames: id
+            referencedTableName: users
+  - changeSet:
+      id: 1731597099133-7
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: approver_id
+            baseTableName: loan_app
+            constraintName: FK_LOANAPP_ON_APPROVER
+            referencedColumnNames: id
+            referencedTableName: users
+  - changeSet:
+      id: 1731597099133-8
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - addForeignKeyConstraint:
+            baseColumnNames: client_id
+            baseTableName: loan_app
+            constraintName: FK_LOANAPP_ON_CLIENT
+            referencedColumnNames: id
+            referencedTableName: users
+  - changeSet:
+      id: 1731597099133-1
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - modifyDataType:
+            columnName: amount
+            newDataType: DECIMAL
+            tableName: transaction
+  - changeSet:
+      id: 1731597099133-2
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - modifyDataType:
+            columnName: balance
+            newDataType: DECIMAL
+            tableName: bank_account
+  - changeSet:
+      id: 1731597099133-3
+      author: Youcode
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - modifyDataType:
+            columnName: basic_limit
+            newDataType: DECIMAL
+            tableName: bank
+

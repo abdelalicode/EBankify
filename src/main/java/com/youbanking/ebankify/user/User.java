@@ -1,12 +1,15 @@
 package com.youbanking.ebankify.user;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.youbanking.ebankify.asset.Asset;
 import com.youbanking.ebankify.bank.bankAccount.BankAccount;
 import com.youbanking.ebankify.role.Role;
 import com.youbanking.ebankify.role.RoleType;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -40,6 +43,13 @@ public class User {
 
     @OneToMany(mappedBy = "client")
     private List<BankAccount> bankAccounts;
+
+
+    @OneToMany(mappedBy= "owner")
+    private List<Asset> assets;
+
+    @CreationTimestamp
+    private LocalDateTime memberSince;
 
 
 

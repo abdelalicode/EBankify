@@ -1,0 +1,25 @@
+
+### ALL ACCOUNTS
+GET  http://localhost:8080/api/assets
+
+### FIND BY ID
+GET http://localhost:8080/api/assets/2
+
+### FIND BY ID THAT DOESNT EXIST
+GET http://localhost:8080/api/assets/99
+
+### CREATE ACCOUNT
+POST http://localhost:8080/api/assets
+Content-Type: application/json
+
+{
+  "assetType": "REAL_ESTATE",
+  "estimatedValue": 78000.00,
+  "acquisitionDate": "2023-11-14T10:30:00"
+}
+
+
+
+
+
+

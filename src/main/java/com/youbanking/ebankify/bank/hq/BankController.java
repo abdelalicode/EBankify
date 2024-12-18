@@ -32,7 +32,6 @@ public class BankController {
             throw new BankNotFoundException();
         }
         return bank.get();
-
     }
 
     @ResponseStatus(HttpStatus.CREATED)

@@ -36,6 +36,15 @@ public class GlobalExceptionHandler {
         );
     }
 
+    @ExceptionHandler(NotEligibleException.class)
+    public ResponseEntity<Object> handleNotEligibleException(NotEligibleException ex) {
+        return ResponseHandler.errorBuilder(
+                ex.getMessage(),
+                HttpStatus.FORBIDDEN,
+                "403"
+        );
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<Object> handleGenericException(Exception ex) {
         return ResponseHandler.errorBuilder(
