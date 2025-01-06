@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1cc12511-7f64-43ae-aef8-12c9be9d3d53" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Dockerfile" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2oAa8tma4Vf6c5fq1iqorvIr7pL" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.BankAccountRequest | ALL ACCOUNTS.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BankAccountRequest | CREATE ACCOUNT.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BankAccountRequest | FIND BY ID THAT DOESNT EXIST.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BankAccountRequest | FIND BY ID.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.BankAccountRequest | UPDATE ACCOUNT.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.UserRequest | ALL USERS.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.UserRequest | CREATE USER.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.UserRequest | LOGIN.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TransactionServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EbankifyApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;EbankifyFront&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Youcode/Desktop/SPRING-SECURITY&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\java\com\youbanking\ebankify" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\APIs" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\resources\data" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\java\com\youbanking\ebankify\bank\HQ" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Youcode\Desktop\Nouveau dossier\EBankify" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\resources\db\changelog\changelogs" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\resources\db\changelog\changelogs\11" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\resources\db\changelog" />
+      <recent name="C:\Users\Youcode\Desktop\ebankify\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.youbanking.ebankify.transaction" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.youbanking.ebankify.role" />
+      <recent name="com.youbanking.ebankify.user" />
+      <recent name="com.youbanking.ebankify.bank.bankAccount" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.EbankifyApplication">
+    <configuration name="BankAccountRequest | FIND BY ID THAT DOESNT EXIST" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/APIs/BankAccountRequest.http" index="3" requestIdentifier="FIND BY ID THAT DOESNT EXIST" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="BankAccountRequest | FIND BY ID" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/APIs/BankAccountRequest.http" index="2" requestIdentifier="FIND BY ID" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRequest | ALL USERS" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/APIs/UserRequest.http" requestIdentifier="ALL USERS" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="UserRequest | LOGIN" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/APIs/UserRequest.http" index="5" requestIdentifier="LOGIN" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="TransactionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ebankify" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.youbanking.ebankify.transaction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.youbanking.ebankify.transaction" />
+      <option name="MAIN_CLASS_NAME" value="com.youbanking.ebankify.transaction.TransactionServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EbankifyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ebankify" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youbanking.ebankify.EbankifyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.BankAccountRequest | FIND BY ID THAT DOESNT EXIST" />
+      <item itemvalue="HTTP Request.BankAccountRequest | FIND BY ID" />
+      <item itemvalue="HTTP Request.UserRequest | ALL USERS" />
+      <item itemvalue="HTTP Request.UserRequest | LOGIN" />
+      <item itemvalue="JUnit.TransactionServiceTest" />
+      <item itemvalue="Spring Boot.EbankifyApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TransactionServiceTest" />
+        <item itemvalue="HTTP Request.UserRequest | ALL USERS" />
+        <item itemvalue="HTTP Request.BankAccountRequest | FIND BY ID THAT DOESNT EXIST" />
+        <item itemvalue="HTTP Request.BankAccountRequest | FIND BY ID" />
+        <item itemvalue="HTTP Request.UserRequest | LOGIN" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1cc12511-7f64-43ae-aef8-12c9be9d3d53" name="Changes" comment="" />
+      <created>1730314677451</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1730314677451</updated>
+      <workItem from="1730314678487" duration="8885000" />
+      <workItem from="1730364318472" duration="17202000" />
+      <workItem from="1730390982810" duration="7531000" />
+      <workItem from="1730450528618" duration="10474000" />
+      <workItem from="1730558826827" duration="13923000" />
+      <workItem from="1730589610596" duration="330000" />
+      <workItem from="1730629807870" duration="12620000" />
+      <workItem from="1734452650153" duration="5993000" />
+      <workItem from="1734510421650" duration="14418000" />
+      <workItem from="1734599729171" duration="2766000" />
+      <workItem from="1734614052382" duration="3185000" />
+      <workItem from="1734636613879" duration="948000" />
+      <workItem from="1734683167986" duration="2206000" />
+      <workItem from="1734691668706" duration="4450000" />
+      <workItem from="1734787035049" duration="2268000" />
+      <workItem from="1734789983866" duration="696000" />
+      <workItem from="1734791736710" duration="383000" />
+      <workItem from="1734901597911" duration="3559000" />
+      <workItem from="1734972030217" duration="6130000" />
+      <workItem from="1735038664354" duration="5361000" />
+      <workItem from="1735127550489" duration="1068000" />
+      <workItem from="1735129880944" duration="2000" />
+      <workItem from="1735226605080" duration="3410000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/youbanking/ebankify/config/JwtAuthenticationFilter.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
